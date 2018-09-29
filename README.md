@@ -1,7 +1,7 @@
 #  This is my updated site 
  I have updated the original files  publisted on June,2018 to meet best coding and design practices. 
 ## Check out the site
-(https://hasinaakhter.github.io/portfolio-updated/)
+(https://hasinaakhter.github.io/taughanackfalls/)
 ### Goals of the update 
 1. Improved Accessibility meeting the guidelines of WCAG 2.0
 2. Proper indentation of HTML and CSS codes
