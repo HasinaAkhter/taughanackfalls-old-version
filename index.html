@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lan="en">
+<html lang="en">
  <head>
    <title>Taughannock Falls in Ithaca</title>
    <link href='https://fonts.googleapis.com/css?family=Lora|Open+Sans:400,400italic' rel='stylesheet' type='text/css'>
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
    <link rel="stylesheet" href="css/normalize.css">
-   <link rel="stylesheet" href="css/lightbox.css">
+   <link rel="stylesheet" href="css/lightbox.min.css">
    <link rel="stylesheet" href="css/style.css">
    <meta name:"viewport" content="width=device-width, initial-scale=1.0">
   <script>
@@ -22,14 +22,15 @@
 	 <span class="title">Lets learn about a scenic spot in ITHACA</span>
 	  <h1>Taughannock Falls </h1>
 	  <div class="arrow">
-	    <a href="#main">
+	  <!--aria-label has been added to the link for accessibility-->
+	    <a href="#main" aria-label="Go to the main section">
 		<i class="fa fa-angle-double-down"></i>
 		</a>
 	  </div>
-    </header>
+    </header><!--/.main-header-->
 	
-	<div class="container">
-			<div class="secondary col">
+	<section class="container">
+			<aside class="secondary col">
 				<ul class="sidebar">
 					  <li><a href="index.html" class="selected">Home </a></li>
 					  <li><a href="#hours of operation">Hours of operation</a></li>
@@ -37,7 +38,7 @@
 				      <li><a href="#photogallery">Photo Gallery</a></li>
 				</ul>
 			<div class="sidebar-left">
-					<h4>
+					<h4 tabindex="0">
 					  Address:
 					</h4>
 					<p>  
@@ -49,12 +50,12 @@
 	
 
 					</p>
-				</div>
-			</div><!--/.secondary-->
+				</div><!--/.sidebar-left-->
+			</aside><!--/.secondary col-->
 			
 			
-			<div id="main" class="tertiary col">
-				<h2>Wel-come to a scenic spot in Ithaca</h2>
+			<main id="main" class="tertiary col">
+				<h2 tabindex="0">Wel-come to a scenic spot in Ithaca</h2>
 				<p>
 				  Ithaca is a city in the popular Finger Lakes region in New York and the Finger Lakes is a region of a group of 11 long, narrow, roughly north-south lakes in Central New York of USA. The lakes' shapes reminded early map-makers of human fingers and this region is a popular attraction site for tourists. 
 				</p>
@@ -75,15 +76,15 @@
                    Cornell University, Stewart State Park, BB Lake Cornell, Robert Treman State Park, Cayuga Lake etc. 
 	               
 				</p>
-			<div id="hours of operation">
-                <h2>Hours of Operation</h2>
+			<article id="hours of operation">
+                <h2 tabindex="0">Hours of Operation</h2>
                 <p>
                  Park is open throughout the year from dawn to dusk. For more details, please call the park. 
 				 
                 </p>
-			</div>
-			<div id="fees">
-				<h2>Fees & Rates</h2>
+			</article><!--/#hours of operation-->
+			<article id="fees">
+				<h2 tabindex="0">Fees & Rates</h2>
                 <p>
 					Entrance Fee for personal vehicle : $8 per vehicle<br>
 					Non-commercial bus: $35<br>
@@ -91,13 +92,13 @@
 					Seasonal bus pass: $75<br>
 					For Camping: $18-$28/night
 				</p>
-			</div>
+			</article><!--/#fees-->
 			
-			</div><!--/.tertiary-->
+			</main><!--/.tertiary col-->
 			
 			
-			<div class="primary col">
-				<h2>Explore Ithaca More!</h2>
+			<aside class="primary col">
+				<h2 tabindex="0">Explore Ithaca More!</h2>
 				<table>
 				<tr>
 				<th><a href="http://cayugalake.com/the-lake" target="_blank">Cayuga Lake</strong></a></th>
@@ -122,81 +123,85 @@
 			 
 			 <!making right sidebar-->		
 				<div class="imagesidebar">
-				<a href="contactform.php" target="_blank">
-				 <img  src="images/brandlogo.jpg">
+				<a href="contactform.php" target="_blank" aria-label="Contact the site creator">
+				 
+				 <img  src="images/brandlogo.jpg" alt="Company logo">
 				</a>
 		       </div><!--/rightsidebar-->
-			</div><!--/.primary-->
+			</aside><!--/.primary col-->
             			
-		<!--http://www.cornellbotanicgardens.org/check out the styles-->
+
 	  
-        <div id="photogallery">
-				<h2>Awesome Photo Gallery (Falls & surroundings)</h2>
-				 <h3>Click on any individual photograph to enjoy a slideshow!!</h3> 
+        <article id="photogallery">
+				<h2 tabindex="0">Awesome Photo Gallery (Falls & surroundings)</h2>
+				 <h3 tabindex="0">Click on any individual photograph to enjoy a slideshow!!</h3> 
 				 <ul id="gallery">
 					<li>
-					 <a href="images/image1.jpg" data-lightbox="roadtrip" data-title="Taughannock Falls">
+					 <a href="images/image1.jpg" data-lightbox="roadtrip" data-title="Taughannock Falls" aria-label="Check Taughannock Falls images">
 					 <img src="images/image1.jpg" alt="">
 					 </a>
 					</li>
 					<li>
-					 <a href="images/image2.jpg" data-lightbox="roadtrip" data-title="Taughannock Falls">
+					 <a href="images/image2.jpg" data-lightbox="roadtrip" data-title="Taughannock Falls" aria-label="Check Taughannock Falls images">
 					 <img src="images/image2.jpg" alt="">
 					 </a>
 					</li>
 					<li>
-					 <a href="images/image3.jpg" data-lightbox="roadtrip" data-title="Taughannock Falls">
+					 <a href="images/image3.jpg" data-lightbox="roadtrip" data-title="Taughannock Falls" aria-label="Check Taughannock Falls images">
 					 <img src="images/image3.jpg" alt="">
 					 </a>
 					</li>
 					<li>
-					 <a href="images/image4.jpg" data-lightbox="roadtrip" data-title="Taughannock Falls">
+					 <a href="images/image4.jpg" data-lightbox="roadtrip" data-title="Taughannock Falls" aria-label="Check Taughannock Falls images">
 					 <img src="images/image4.jpg" alt="">
 					 </a>
 					</li>
 					<li>
-					 <a href="images/image5.jpg" data-lightbox="roadtrip" data-title="Taughannock Falls">
+					 <a href="images/image5.jpg" data-lightbox="roadtrip" data-title="Taughannock Falls" aria-label="Check Taughannock Falls images">
 					 <img src="images/image5.jpg" alt="">
 					 </a>
 					</li>
 					<li>
-					 <a href="images/image6.jpg" data-lightbox="roadtrip" data-title="Taughannock Falls">
+					 <a href="images/image6.jpg" data-lightbox="roadtrip" data-title="Taughannock Falls" aria-label="Check Park images">
 					 <img src="images/image6.jpg" alt="" >
 					 </a>
 					</li>
 					
-			  </div><!--/#photogallery--> 
+			  </article><!--/#photogallery--> 
 			<div class="reference">
               			  
               <p>
 			   Need more information?<br>
-			   Visit <a href="http://www.nysparks.com/parks/62/details.aspx" target="_blank"> Taughannock Falls State Park </a>;<br> 
-                     <a href="http://www.nysparks.com/parks/62/details.aspx" target="_blank">Taughannock Falls,Ulysses, NY</a>.
+			   <!--aria-label has been added to the link for accessibility-->
+			   Visit <a href="http://www.nysparks.com/parks/62/details.aspx" target="_blank" aria-label="Go to the site"> Taughannock Falls State Park </a><br> 
+                     <a href="http://www.nysparks.com/parks/62/details.aspx" target="_blank" aria-label="Go to the site">Taughannock Falls,Ulysses, NY</a>
              </p>
-			 </div>
+			 </div><!--/.reference-->
  
  
   
   <footer class="main-footer">
-    <!--<p><a href="http://www.facebook.com"><img src="img/facebook-wrap.png" alt="facebook-icon"></a>
-	             <a href="http://www.twitter.com"><img src="img/twitter-wrap.png" alt="twitter-icon"></a></p>-->
+    
 	
 	
 	<p>&copy;2017 www.taughannockfalls.hasinaakhter.com All rights reserved.</p>
-			<p>Created by Hasina Akhter (<a href="contactform.php" target="_blank">
+			<!--aria-label has been added to the link for accessibility-->
+			<p>Created by Hasina Akhter (<a href="contactform.php" target="_blank" aria-label="Contact the site Creator">
 				 HA developement & design</a>) </p>
 			
 				
-			
-			<a href="#top">Back to top &raquo;</a>
-		</footer>
-    </div>
+			<!--aria-label has been added to the link for accessibility-->
+			<a href="#top" aria-label="Go-to-top">
+              <i class="fa fa-arrow-circle-up" style="font-size:42px;color:blue; line-height: 1.5;"></i>
+            </a>
+		</footer><!--/.main-footer-->
+    </section><!--/.container-->
 	<script
       src="https://code.jquery.com/jquery-3.1.0.min.js"
       integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="
       crossorigin="anonymous">
 	</script>
-	<script src="js/lightbox.js"></script>
+	<script src="js/lightbox.min.js"></script>
 	<script src="js/app.js"></script>
 	<script src="js/script.js"></script>
  </body>
