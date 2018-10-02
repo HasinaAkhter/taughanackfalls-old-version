@@ -81,7 +81,7 @@ a:active {
 a:focus,
 h2:focus,
 h4:focus {
-	outline: 3px solid green;
+	outline: .6px solid green;
 	text-decoration: underline;
 }
 
